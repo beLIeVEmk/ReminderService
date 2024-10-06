@@ -24,7 +24,8 @@ module.exports = {
       status: {
         type: Sequelize.ENUM,
         allowNull:false,
-        values:["pending","success","failed"]
+        values:["pending","success","failed"],
+        defaultValue:"pending"
       },
       notificationTime: {
         type: Sequelize.DATE,
